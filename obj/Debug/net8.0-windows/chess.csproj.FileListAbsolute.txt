@@ -1,0 +1,14 @@
+C:\Users\Adriaan2\Documents\chess\bin\Debug\net8.0-windows\chess.exe
+C:\Users\Adriaan2\Documents\chess\bin\Debug\net8.0-windows\chess.deps.json
+C:\Users\Adriaan2\Documents\chess\bin\Debug\net8.0-windows\chess.runtimeconfig.json
+C:\Users\Adriaan2\Documents\chess\bin\Debug\net8.0-windows\chess.dll
+C:\Users\Adriaan2\Documents\chess\bin\Debug\net8.0-windows\chess.pdb
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.AssemblyInfoInputs.cache
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.AssemblyInfo.cs
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.csproj.CoreCompileInputs.cache
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.dll
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\refint\chess.dll
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.pdb
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\chess.genruntimeconfig.cache
+C:\Users\Adriaan2\Documents\chess\obj\Debug\net8.0-windows\ref\chess.dll
