@@ -49,25 +49,10 @@ partial class Form1
     public void white(Panel[,] panels,Button[] opponentpieces,Button [] playerpieces,Button [] playerpawns, Button [] opponetpawns){
         Controls.RemoveAt(0);
         Controls.RemoveAt(0);
-        for (int i = 0; i < opponentpieces.Length; i++)
-        {
-            Controls.Add(opponentpieces[i]);
-
-        }
-        for (int i = 0; i < playerpieces.Length; i++)
-        {
-            Controls.Add(playerpieces[i]);
-
-        }
-        for (int i = 0; i < playerpawns.Length; i++)
-        {
-                                                    Controls.Add(playerpawns[i]);
-
-        }
-        for (int i = 0; i < opponetpawns.Length; i++)
-        {
-            Controls.Add(opponetpawns[i]);
-        }
+        arrayadder(opponentpieces);
+        arrayadder(playerpieces);
+        arrayadder(playerpawns);
+       arrayadder(opponetpawns);
 
         for (int i = 0; i < panels.GetLength(0); i++)
         {
@@ -75,6 +60,12 @@ partial class Form1
             {
              Controls.Add(panels[i,j]);   
             }
+        }
+    }
+    public void arrayadder(Control [] objects){
+        for (byte i = 0; i < objects.Length; i++)
+        {
+            Controls.Add(objects[i]);
         }
     }
 

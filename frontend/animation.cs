@@ -26,4 +26,5 @@ public static class Form2
         }
 
     }  
+    public  static void animationpiece(){}
 }

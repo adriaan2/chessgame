@@ -59,9 +59,9 @@ public void printboard(Func<int,int,bool> func, string[] playerpieces, string[] 
                 Button button =initialization.buttoninitialization(playerpawn, 60, 60, (80 * j) + 160, (80 * i) + 54);
                 playerpawns[j] = button;
                 button.Font = new Font(button.Font.FontFamily, button.Font.Size * (float)3.2);
-#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+#pragma warning disable CS8622 
                 button.Click += Form2.playerpawnclick;
-#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+#pragma warning restore CS8622 
             }
             if (i == 1)
             {
@@ -70,23 +70,20 @@ public void printboard(Func<int,int,bool> func, string[] playerpieces, string[] 
              button.Font = new Font(button.Font.FontFamily, button.Font.Size * (float)3.2);
 
                 opponentpawn[j] = button;
-#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+#pragma warning disable CS8622 
                     button.Click += Form2.oppennentpawn;
-#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+#pragma warning restore CS8622
                 }
 
             if (i == 7)
             {
-                Button chesspiece =initialization.buttoninitialization(opponentpieces[j], 60, 60, (80 * j) + 160, (80 * i) + 54);
+                Button chesspiece =initialization.buttoninitialization(opponentpieces[j], 60, 60, (80 * j) + 160, (80 * i) + 54,opponentpieces[j]);
                 opponentchesspiecesarray[j] = chesspiece;
                 chesspiece.Font = new Font(chesspiece.Font.FontFamily, chesspiece.Font.Size * (float)3.1);
-                chesspiece.BackColor = Color.Transparent;
-                chesspiece.UseVisualStyleBackColor = false; // Ensure no default styling
             }
 
-            chesspieces[i, j] = new Panel();
-            chesspieces[i, j].Size = new Size(80, 80);
-            chesspieces[i, j].Location = new Point((80 * j) + 150, (80 * i) + 50);
+            chesspieces[i, j] =initialization.panelInitialization(80,80,80*j+150,(80*i+54));
+           
 
             if (func(i, j))
             {
